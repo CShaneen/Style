@@ -1,0 +1,92 @@
+﻿body {
+            background-color: lavender;
+        }
+        
+        #top {
+            position: fixed;
+            top: 0;
+            width: 99%;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: whitesmoke;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+        
+        #inputsearch {
+            background-color: lavender;
+            border-width: 1;
+            border-color: lightgrey;
+            margin-top: 8px;
+            width: 200px;
+            height: 30px;
+            float: right;
+            right: 10px;
+        }
+        
+        .topL {
+            left: 0%;
+            right: 39%;
+            height: 50%;
+            width: 49%;
+            top: 10%;
+            position: absolute;
+               
+            }
+        
+        .topR {
+            right: 0%;
+            left: 55%;
+            height: 50%;
+            width: 39%;
+            top: 10%;
+            position: absolute;
+        }
+        
+        .downL {
+            right: 59%;
+            height: 40%;
+            width: 34%;
+            top: 60%;
+            position: absolute;
+        }
+        .downR {
+            right: 0;
+            left: 40%;
+            height: 40%;
+            width: 50%;
+            top: 60%;
+            position: absolute;
+        }
+        
+        h2 {
+            color: dimgrey;
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+        p,
+        dd {
+            font-size: 15px;
+            font-family: "Lucida Console", "Courier New", monospace;
+            color: dimgray;
+        }
+        dt {
+            color: dimgrey;
+            font-family: "Lucida Console", "Courier New", monospace;
+            font-weight: 900;
+        }
+        

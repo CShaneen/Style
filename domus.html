@@ -1,0 +1,146 @@
+<html>
+
+<head>
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <title>
+        Chairs - Domus
+    </title>
+    <style>
+        #top {
+            position: absolute;
+            top: 0;
+            width: 99%;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: whitesmoke;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+        
+        #inputsearch {
+            background-color: lavender;
+            border-width: 1;
+            border-color: lightgrey;
+            margin-top: 8px;
+            width: 200px;
+            height: 30px;
+            float: right;
+            right: 10px;
+        }
+        
+        #back {
+            background-image: url("domus2.jpg");
+            background-size: 100% 100%;
+            background-attachment: scroll;
+            animation-name: back;
+            animation-duration: 15s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+        
+        @keyframes back {
+            from {
+                background-image: url("domus2.jpg");
+            }
+            50% {
+                background-image: url("domus3.jpg");
+            }
+            100% {
+                background-image: url("domus4.jpg");
+            }
+        }
+        
+        #backimg {
+            width: 100%;
+            height: 70%;
+        }
+        
+        .split_left {
+            left: 0;
+            width: 50%;
+            height: 30%;
+            position: absolute;
+        }
+        
+        .split_right {
+            right: 0;
+            width: 50%;
+            height: 30%;
+            position: absolute;
+        }
+        
+        .Lmargin {
+            top: 30%;
+            margin-left: 30%;
+            position: absolute;
+        }
+        
+        .Rmargin {
+            margin-right: 20%;
+            margin-left: 20%;
+            position: absolute;
+        }
+        
+        label {
+            background-color: black;
+            color: blanchedalmond;
+            text-align: center;
+            font-size: 25px;
+            padding: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="top">
+        <ul>
+            <li>
+                <a href="chair.html"><img src="arrow.png" width="20px" height="20px"></a>
+            </li>
+            <li><a href="stylefurniture.html">HOME</a></li>
+            <li><a href="history.html">HISTORY</a></li>
+            <li><a href="product.html">PRODUCTS</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="buy.html">WHERE TO BUY</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
+            <input id="inputsearch" type="search" name="search" placeholder="SEARCH">
+        </ul>
+    </div>
+    <div id="back">
+        <p id="backimg"></p>
+    </div>
+
+    <div class="split_left">
+        <div class="Lmargin">
+            <label> Description </label><br><br>
+            <p>A unique collection for waiting areas. The painted steel frame encloses the neatly finished upholstered parts.<br> Both leather and fabric are used here to confirm elegance. Geometric shapes that highlight all finishings, from the most compact
+                to the softest.</p>
+
+        </div>
+    </div>
+
+    <div class="split_right">
+        <div class="Rmargin">
+            <img src="domus1.jpg" width="100%" height="100%">
+        </div>
+    </div>
+</body>
+
+</html>

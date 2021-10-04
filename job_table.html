@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <title>
+        Style Furniture - Contacts
+    </title>
+
+    <style>
+        body {
+            background-image: url("contacts.jpg");
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        h4 {
+        	margin: 25px;
+            color: dimgrey;
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+    </style>
+</head>
+<body>
+	<h4>Thank you, We will respond you as soon as possible</h4>
+</body>
+
+<?php
+
+$servername = "localhost";
+$DBname = "style";
+$username = "root";
+$pass = "";
+$DBconnect = new mysqli($servername, $username, $pass, $DBname);
+
+
+
+$email = $_POST["email2"];
+$name = $_POST["Fname2"];
+$job = $_POST["job"];
+$sql = "INSERT INTO job_table (Email, Name, Job) VALUES ('$email', '$name', '$job')";
+mysqli_query($DBconnect, $sql);
+
+?>
+</html>

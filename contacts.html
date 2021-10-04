@@ -1,0 +1,225 @@
+<html>
+
+<head>
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <title>
+        Style Furniture - Contacts
+    </title>
+
+    <style>
+        body {
+            background-image: url("contacts.jpg");
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        
+        #top {
+            position: absolute;
+            top: 0;
+            width: 99%;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: whitesmoke;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+        
+        #inputsearch {
+            background-color: lavender;
+            border-width: 1;
+            border-color: lightgrey;
+            margin-top: 8px;
+            width: 200px;
+            height: 30px;
+            float: right;
+            right: 10px;
+        }
+        
+        .split_left {
+            left: 0;
+            height: 80%;
+            width: 49%;
+            top: 8%;
+            position: absolute;
+        }
+        
+        .split_right {
+            right: 0;
+            height: 80%;
+            width: 49%;
+            top: 8%;
+            position: absolute;
+        }
+        
+        .Lmargin {
+            margin-left: 23%;
+            margin-right: 30%;
+        }
+        
+        .Rmargin {
+            margin-right: 23%;
+            margin-left: 30%;
+        }
+        
+        p {
+            background-color: black;
+            color: blanchedalmond;
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        label {
+            font-size: 16px;
+        }
+        
+        select {
+            background-color: whitesmoke;
+            width: 300px;
+            height: 30px
+        }
+        
+        input {
+            background-color: whitesmoke;
+        }
+        
+        #dim {
+            width: 300px;
+            height: 30px;
+        }
+        
+        #button {
+            background-color: whitesmoke;
+            font-size: 15px;
+            text-align: center;
+            border-radius: 10px;
+            width: 145px;
+            height: 30px;
+        }
+        
+        textarea {
+            background-color: whitesmoke;
+        }
+        
+        .vertical {
+            border-right: 3px solid gray;
+            top: 8%;
+            height: 600px;
+        }
+        
+        #privacy {
+            color: lightslategrey;
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+        
+        a:visited {
+            color: maroon;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <div id="top">
+        <ul>
+            <li>
+                <a href="stylefurniture.html"><img src="arrow.png" width="20px" height="20px"></a>
+            </li>
+            <li><a href="stylefurniture.html">HOME</a></li>
+            <li><a href="history.html">HISTORY</a></li>
+            <li><a href="product.html">PRODUCTS</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="buy.html">WHERE TO BUY</a></li>
+            <li><a href="contacts.html">CONTATS</a></li>
+            <input id="inputsearch" type="search" name="search" placeholder="SEARCH">
+        </ul>
+    </div>
+    <form name="register" method="post" action="contact_table.html">
+        <div class="split_left vertical" class="vertical">
+            <div class="Lmargin">
+                <p id="dim">Contact us</p>
+                <input type="email" id="dim" name="email1" placeholder="EMAIL" autocomplete="on" required>
+                <br><br>
+                <input type="text" id="dim" name="Fname1" placeholder="NAME" autocomplete="on">
+                <br><br>
+                <input type="text" id="dim" name="Lname" placeholder="SURNAME" autocomplete="on">
+                <br><br>
+                <input type="tel" id="dim" name="phone" placeholder="PHONE" autocomplete="on">
+                <br><br>
+                <select id="nation" name="nation">
+            <option value="NATION">NATION</option>
+            <option value="AUSTRALIA">AUSTRALIA</option>
+            <option value="BRAZL">BRAZL</option>
+            <option value="CANADA">CANADA</option>
+            <option value="FRANCE">FRANCE</option>
+            <option value="HONG KONG">HONG KONG</option>
+            <option value="IRAQ">IRAQ</option>
+            <option value="JORDAN">JORDAN</option>
+            <option value="KUWAIT">KUWAIT</option>
+            <option value="MEXICO">MEXICO</option>
+            <option value="OMAN">OMAN</option>
+            <option value="ROMANIA">ROMANIA</option>
+            <option value="SAUDI ARABIA">SAUDI ARABIA</option>
+            <option value="UNITED STATES">UNITED STATES</option>
+        </select>
+                <br><br>
+                <label> <b> Area of Interest </b></label><br>
+                <input type="checkbox" id="admin" name="admin" value="admin">
+                <label for="admin"> Contact With the Administrative Office </label>
+                <br>
+                <input type="checkbox" id="material" name="material" value="material">
+                <label for="material"> Material </label>
+                <br>
+                <input type="checkbox" id="other" name="other" value="other">
+                <label for="other"> other </label>
+                <br><br>
+                <textarea name="message" placeholder="MESSAGE" rows="6" cols="40"></textarea>
+                <br><br>
+                <input type="checkbox" id="privcy" name="privcy" value="privcy" required>
+                <label for="privcy"> I accept <a href="privacy.html" target="_blank" id="privacy"> privacy policy </a> terms and condition </label>
+                <br><br>
+                <input id="button" type="submit" value="SEND">
+                <input id="button" type="reset" value="CLEAR">
+            </div>
+        </div>
+    </form>
+    <form method="post" action="job_table.html">
+        <div class="split_right">
+            <div class="Lmargin">
+                <p id="dim">Job With Us</p>
+                <input type="email" id="dim" name="email2" placeholder="EMAIL" autocomplete="on" required>
+                <br><br>
+                <input type="text" id="dim" name="Fname2" placeholder="NAME" autocomplete="on">
+                <br><br>
+                <input type="job" id="dim" name="job" placeholder="JOB TITLE" autocomplete="on" required>
+                <br><br>
+                <input type="file" name="cv">
+                <br><br>
+                <input type="checkbox" id="privcy" name="privcy" value="privcy" required>
+                <label for="privcy"> I accept <a href="privacy.html" target="_blank" id="privacy"> privacy policy </a> terms and condition </label>
+                <br><br>
+                <input id="button" type="submit" value="SEND" #button>
+                <input id="button" type="reset" value="CLEAR">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
